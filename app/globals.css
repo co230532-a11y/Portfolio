@@ -54,7 +54,10 @@ body {
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-radius: 14px;
-  transition: background 0.25s, border-color 0.25s, transform 0.25s;
+  transition:
+    background 0.25s,
+    border-color 0.25s,
+    transform 0.25s;
 }
 .glass-card:hover {
   background: var(--glass-hover);
@@ -70,7 +73,10 @@ body {
   padding: 26px 22px;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  transition: background 0.25s, border-color 0.25s, transform 0.25s;
+  transition:
+    background 0.25s,
+    border-color 0.25s,
+    transform 0.25s;
 }
 .svc-card:hover {
   background: var(--glass-hover);
@@ -88,7 +94,9 @@ body {
   -webkit-backdrop-filter: blur(16px);
   position: relative;
   overflow: hidden;
-  transition: border-color 0.25s, background 0.25s;
+  transition:
+    border-color 0.25s,
+    background 0.25s;
 }
 .mil-card::before {
   content: "";
@@ -148,11 +156,21 @@ body {
   opacity: 0;
   animation: fadeUp 0.6s ease forwards;
 }
-.d1 { animation-delay: 0.1s; }
-.d2 { animation-delay: 0.22s; }
-.d3 { animation-delay: 0.34s; }
-.d4 { animation-delay: 0.46s; }
-.d5 { animation-delay: 0.58s; }
+.d1 {
+  animation-delay: 0.1s;
+}
+.d2 {
+  animation-delay: 0.22s;
+}
+.d3 {
+  animation-delay: 0.34s;
+}
+.d4 {
+  animation-delay: 0.46s;
+}
+.d5 {
+  animation-delay: 0.58s;
+}
 
 @keyframes scrollReveal {
   from {
