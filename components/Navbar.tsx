@@ -25,7 +25,7 @@ export default function Navbar() {
           }
         });
       },
-      { threshold: 0.4 }
+      { threshold: 0.4 },
     );
     sections.forEach((s) => observer.observe(s));
     return () => observer.disconnect();
@@ -104,12 +104,12 @@ export default function Navbar() {
 
         {/* Hamburger */}
         <button
-          className="md:hidden p-2"
-          style={{ color: "rgba(255,255,255,0.5)" }}
+          className="md:hidden p-2 text-xl"
+          style={{ color: "rgba(255,255,255,0.7)" }}
           onClick={() => setMobileOpen((o) => !o)}
           aria-label="Menu"
         >
-          <i className={`fa-solid ${mobileOpen ? "fa-xmark" : "fa-bars"}`} />
+          {mobileOpen ? "✕" : "☰"}
         </button>
       </div>
 

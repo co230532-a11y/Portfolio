@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Syne, DM_Sans } from "next/font/google";
 import "./globals.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const syne = Syne({
   subsets: ["latin"],
@@ -27,7 +28,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${syne.variable} ${dmSans.variable} scroll-smooth`}>
+    <html
+      lang="en"
+      className={`${syne.variable} ${dmSans.variable} scroll-smooth`}
+    >
       <head>
         <link
           rel="stylesheet"
